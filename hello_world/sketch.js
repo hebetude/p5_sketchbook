@@ -1,9 +1,9 @@
 'use strict';
 
-function setup(){
+function setup() {
     createCanvas(600, 600);
 }
 
-function draw(){
+function draw() {
     text("hello p5", 290, 298)
 }
