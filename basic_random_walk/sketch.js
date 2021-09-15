@@ -5,6 +5,9 @@ var walkers = [];
 function setup() {
     createCanvas(700, 700);
     background(255);
+    for (let i = 0; i < 100; i++) {
+        walkers.push(new Walker(width/2, height/2));  
+    }
 }
 
 function draw() {
@@ -18,7 +21,10 @@ function draw() {
 }
 
 function mouseClicked() {
-    walkers.push(new Walker(mouseX, mouseY));
+    walkers = [];
+    for (let i = 0; i < 100; i++) {
+        walkers.push(new Walker(width/2, height/2));  
+    }
 }
 
 // this is only here to let me know where the canvas actually is

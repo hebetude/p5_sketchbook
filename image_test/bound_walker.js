@@ -10,7 +10,7 @@ class BoundWalker {
         this.speed = -this.speed;
         this.velocity = createVector(0, 0, 0)
         this.fillColor = col;
-        this.totalSteps = 1200;
+        this.totalSteps = 3600;
         this.stepsTaken = 0;
     }
 
@@ -46,9 +46,7 @@ class BoundWalker {
 
             this.move();
             this.stepsTaken++;
-        } else {
-            console.log("stopped running");
-        }
+        } 
 
     }
 
